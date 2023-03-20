@@ -1,17 +1,22 @@
 const bookForm = document.querySelector('#bookForm');
 const bookList = document.querySelector('#bookList');
-let books;
+
+class BookStore {
+  books = [];
+}
+
+const book = new BookStore();
 
 if (localStorage.getItem('books') !== null) {
-  books = JSON.parse(localStorage.getItem('books'));
+  book.books = JSON.parse(localStorage.getItem('books'));
 } else {
-  books = [];
+  book.books = [];
 }
 
 function showBookList() {
   bookList.innerHTML = '';
 
-  books.forEach((b, index) => {
+  book.books.forEach((b, index) => {
     bookList.innerHTML += `
         <p>${b.title}</p>
         <p>${b.author}</p>
@@ -22,15 +27,15 @@ function showBookList() {
 }
 
 function addBook(title, author) {
-  books.push({ title, author });
-  localStorage.setItem('books', JSON.stringify(books));
+  book.books.push({ title, author });
+  localStorage.setItem('books', JSON.stringify(book.books));
   bookForm.reset();
   showBookList();
 }
 
 function removeBook(id) {
-  books.splice(id, 1);
-  localStorage.setItem('books', JSON.stringify(books));
+  book.books.splice(id, 1);
+  localStorage.setItem('books', JSON.stringify(book.books));
   showBookList();
 }
 
