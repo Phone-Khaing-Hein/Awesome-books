@@ -166,7 +166,7 @@ If you like my project, you can give me a star by supporting me.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Thank you [Candy Shin](https://www.behance.net/adagio07) for designing the template!
+I would like to thanks microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
