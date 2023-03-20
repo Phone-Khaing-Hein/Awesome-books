@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="images/signature.png" alt="logo" width="300"  height="auto" />
+  <img src="signature.png" alt="logo" width="300"  height="auto" />
   <br/>
 </div>
 
@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Capstone Project] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
-VarCamp website is an app to showcase best practices of HTML code, CSS and DOM Manipulation. VarCamp (virtual barcamp) is a type of conference or workshop that is organized and hosted online, rather than in person. The format of a virtual barcamp is similar to that of an in-person barcamp, with participants presenting talks, leading discussions, and participating in collaborative activities.
+Awesome Books is an app to implement pure javascript ES6. You can add, delete and list books.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -78,7 +78,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone https://github.com/Rimuru-Tempest-26/capstone_project_1.git
+  git clone https://github.com/Rimuru-Tempest-26/Awesome-books.git
 ```
 
 ### Install
@@ -140,9 +140,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **responsive design**
-- [ ] **demo project**
-- [ ] **capstone project**
+- [ ] **Implement a nice UI for great user experience**
+- [ ] **Add more functionalities**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
