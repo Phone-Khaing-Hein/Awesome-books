@@ -65,3 +65,39 @@ function remove(id) {
 }
 
 bookStore.showBookList(bookList);
+
+// version 3
+const listLink = document.querySelector('#list');
+const addLink = document.querySelector('#add');
+const contactLink = document.querySelector('#contact');
+const bookListComponent = document.querySelector('#bookListComponent');
+const addBookComponent = document.querySelector('#addBookComponent');
+const contactComponent = document.querySelector('#contactComponent');
+
+function hide(element) {
+  element.classList.remove('display-block');
+  element.classList.add('display-none');
+}
+
+function show(element) {
+  element.classList.remove('display-none');
+  element.classList.add('display-block');
+}
+
+[listLink, addLink, contactLink].forEach((l) => {
+  l.addEventListener('click', () => {
+    if (l.id === 'list') {
+      show(bookListComponent);
+      hide(addBookComponent);
+      hide(contactComponent);
+    } else if (l.id === 'add') {
+      show(addBookComponent);
+      hide(bookListComponent);
+      hide(contactComponent);
+    } else {
+      show(contactComponent);
+      hide(addBookComponent);
+      hide(bookListComponent);
+    }
+  });
+});

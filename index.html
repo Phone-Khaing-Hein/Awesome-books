@@ -11,19 +11,63 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body class="container d-flex justify-content-center flex-column align-items-center">
-    <h1 class="mt-5 text-center">All Awesome books</h1>
-    <table class="table table-hover table-striped w-50 mb-3">
-        <tbody id="bookList">
-        </tbody>
-    </table>
-    <hr class="divider">
-    <h2 class="text-center">Add a new Book</h2>
-    <form id="bookForm" class="w-25">
-        <input type="text" placeholder="Title" name="title" class="form-control">
-        <input type="text" placeholder="Author" name="author" class="form-control">
-        <button type="submit" class="btn btn-primary float float-end">Add</button>
-    </form>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Awesome books</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" id="list">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="add">Add New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-center flex-column align-items-center">
+        <div id="bookListComponent" class="mt-5 pt-5 w-50 display-block">
+            <h1 class="text-center">All Awesome books</h1>
+            <table class="table table-hover table-striped mb-3">
+                <tbody id="bookList">
+                </tbody>
+            </table>
+        </div>
+        <div id="addBookComponent" class="mt-5 pt-5 w-50 display-none">
+            <h2 class="text-center">Add a new Book</h2>
+            <form id="bookForm">
+                <input type="text" placeholder="Title" name="title" class="form-control">
+                <input type="text" placeholder="Author" name="author" class="form-control">
+                <button type="submit" class="btn btn-primary float float-end">Add</button>
+            </form>
+        </div>
+        <div id="contactComponent" class="mt-5 pt-5 w-50 display-none">
+            <h2 class="text-center mb-3">Contact Information</h2>
+            <p class="mb-3">
+                Do have any questions or just want to say "Hello"? You can reach out to us.
+            </p>
+            <ul>
+                <li>Our email : example@gmail.com</li>
+                <li>Out phone : 0987654321</li>
+                <li>Our address : Yangon, Myanmar</li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© Copyright Awesome Books</span>
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 
