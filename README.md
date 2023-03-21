@@ -135,6 +135,10 @@ Example:
 - Twitter: [@phonekhainghein](https://twitter.com/PhoneKhaingHein)
 - LinkedIn: [Phone Khaing Hein](https://www.linkedin.com/in/phone-khaing-hein-759497216/)
 
+👤 **Boniface Dennis**
+
+- GitHub: [@BonifaceDennis](https://github.com/boniface193)
+
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>

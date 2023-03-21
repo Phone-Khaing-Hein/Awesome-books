@@ -3,3 +3,9 @@
   padding: 5px;
   display: block;
 }
+
+.divider {
+  height: 5px;
+  background-color: black;
+  width: 50%;
+}
