@@ -4,8 +4,21 @@
   display: block;
 }
 
-.divider {
-  height: 5px;
-  background-color: black;
-  width: 50%;
+body {
+  height: 100vh !important;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
