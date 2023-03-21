@@ -1,12 +1,12 @@
-const bookForm = document.querySelector("#bookForm");
-const bookList = document.querySelector("#bookList");
+const bookForm = document.querySelector('#bookForm');
+const bookList = document.querySelector('#bookList');
 
 class BookStore {
   books = [];
 
-  title = "";
+  title = '';
 
-  author = "";
+  author = '';
 
   set title(title) {
     this.title = title;
@@ -17,7 +17,7 @@ class BookStore {
   }
 
   showBookList(bookList) {
-    bookList.innerHTML = "";
+    bookList.innerHTML = '';
 
     this.books.forEach((b, index) => {
       bookList.innerHTML += `
@@ -31,31 +31,31 @@ class BookStore {
 
   addBook(bookList) {
     this.books.push({ title: this.title, author: this.author });
-    localStorage.setItem("books", JSON.stringify(this.books));
+    localStorage.setItem('books', JSON.stringify(this.books));
     bookForm.reset();
     this.showBookList(bookList);
   }
 
   removeBook(id, bookList) {
     this.books.splice(id, 1);
-    localStorage.setItem("books", JSON.stringify(this.books));
+    localStorage.setItem('books', JSON.stringify(this.books));
     this.showBookList(bookList);
   }
 }
 
 const bookStore = new BookStore();
 
-if (localStorage.getItem("books") !== null) {
-  bookStore.books = JSON.parse(localStorage.getItem("books"));
+if (localStorage.getItem('books') !== null) {
+  bookStore.books = JSON.parse(localStorage.getItem('books'));
 } else {
   bookStore.books = [];
 }
 
-bookForm.addEventListener("submit", (e) => {
+bookForm.addEventListener('submit', (e) => {
   e.preventDefault();
   bookStore.title = bookForm.title.value;
   bookStore.author = bookForm.author.value;
-  if (bookStore.title !== "" && bookStore.author !== "") {
+  if (bookStore.title !== '' && bookStore.author !== '') {
     bookStore.addBook(bookList);
   }
 });
